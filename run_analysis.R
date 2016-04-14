@@ -52,4 +52,4 @@ library(plyr)
 tidy_data <- ddply(new_data, .(User, Activity), numcolwise(mean))
 
 #Write data set into a file
-write.table(tidy_data, "tidy_data.txt", sep="\t")
+write.table(tidy_data, "tidy_data.txt", sep="\t", row.names = FALSE)
